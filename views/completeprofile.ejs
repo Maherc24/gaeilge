@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+span{
+  font-size: 25px;
+  color: #ffff;
+  background-color: #2881DB;
+  padding: 10px;
+
+}
+div{
+  font-size: 25px;
+  color: #ffff;
+  background-color: #2881DB;
+  padding: 50px;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#backtohome").click(function(){
+    window.location.href='/';
+  });
+});
+</script>
+<body>
+  <br><br><br><br>
+<span>Welcome : <%= profileData.name %> Your profile is Completed following is your details<br></span>
+<div>
+            Email:     <%= profileData.email %><br>
+            Phone:    <%= profileData.phone %><br>
+            Education:    <%= profileData.education %><br>
+            AOI:          <%= profileData.aoi %><br>
+
+<div>
+  <p><%= profileData.name %> have you downloaded your notes?
+    <a href="https://curriculumonline.ie/getmedia/920c3fd9-1f53-4163-a045-90f07ebb6b71/PSEC01b-Gaeilge_curriculum.pdf" download="gaeilge.pdf" target="_blank">Download</a>
+  </p>
+<button class="w3-btn w3-blue" id="backtohome">Back to Home</button></p>
+</body>
+</html>
