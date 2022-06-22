@@ -34,7 +34,7 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "got": "^6.7.1",
+    "got": "^11.8.5",
     "mongodb": "^3.5.5",
     "registry-auth-token": "^3.0.1",
     "registry-url": "^3.0.3",
